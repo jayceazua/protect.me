@@ -98,11 +98,39 @@ class Home extends Component {
         <div className="container">
             <div className="row">
                 <div className="header-section text-center">
-                    <h2>Meet the brains</h2>
-                    <p>Over the last 6 months I have developed coding skills. Learning and utilizing technologies like HTML & CSS, Javascript, jQuery, APIs & AJAX, Node.js, Node Web Servers and MUCH more. I've also learned database structures with Firebase, MySQL and MongoDB. <br/> <strong> It's been a wild ride! </strong> </p>
+                    <h2>Meet Our Team Members</h2>
+                    <p>Over the last 6 months we have developed our coding skills. Learning and utilizing technologies like HTML & CSS, Javascript, jQuery, APIs & AJAX, Node.js, Node Web Servers and MUCH more. We've also learned database structures with Firebase, MySQL and MongoDB. <br/> <strong> It's been a wild ride! </strong> </p>
                     <hr className="bottom-line"/>
                 </div>
-                <div className="col-lg-12">
+                <div className="col-lg-4 col-md-4 col-sm-4">
+                    <div className="pm-staff-profile-container">
+                        <div className="pm-staff-profile-image-wrapper text-center">
+                            <div className="pm-staff-profile-image">
+                                <img src="img/ed.jpg" alt="" className="img-thumbnail img-circle" />
+                            </div>
+                        </div>
+                        <div className="pm-staff-profile-details text-center">
+                            <p className="pm-staff-profile-name">Edward Acosta</p>
+                            <p className="pm-staff-profile-title">Full-Stack Developer</p>
+                            <p className="pm-staff-profile-bio">Edward is currently learning Cyber Security and Python. After the bootcamp he will be looking for opportunities as a Developer after he completes a Python Bootcamp in Seattle in January 2018.</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-lg-4 col-md-4 col-sm-4">
+                    <div className="pm-staff-profile-container">
+                        <div className="pm-staff-profile-image-wrapper text-center">
+                            <div className="pm-staff-profile-image">
+                                <img src="img/andrea.jpg" alt="" className="img-thumbnail img-circle" />
+                            </div>
+                        </div>
+                        <div className="pm-staff-profile-details text-center">
+                            <p className="pm-staff-profile-name">Andrea Dalrymple</p>
+                            <p className="pm-staff-profile-title">Full-Stack Developer</p>
+                            <p className="pm-staff-profile-bio">Andrea is confident in HTML, CSS, JavaScript and Ruby. She has recently accepted a technical opportunity in Fort Lauderdale but is always open to networking events.</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-lg-4 col-md-4 col-sm-4">
                     <div className="pm-staff-profile-container">
                         <div className="pm-staff-profile-image-wrapper text-center">
                             <div className="pm-staff-profile-image">
@@ -112,7 +140,7 @@ class Home extends Component {
                         <div className="pm-staff-profile-details text-center">
                             <p className="pm-staff-profile-name">Jayce Azua</p>
                             <p className="pm-staff-profile-title">Full-Stack Developer</p>
-                            <p className="pm-staff-profile-bio">Jayce is an experienced Full-Stack Developer. He has created a wide range of projects in PHP, Node, Python and JavaScript. He is currently working as a Freelance Web Developer and CRM architect. </p>
+                            <p className="pm-staff-profile-bio">Jayce is an experienced Full-Stack Developer. He has created a wide range of projects in PHP, Node, and JavaScript. He is currently working as a Freelance Web Developer and CRM architect. </p>
                         </div>
                     </div>
                 </div>
