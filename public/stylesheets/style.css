@@ -84,6 +84,14 @@ Networks scanned /  internet speed
     margin-left: 5px;
 }
 
+#mbsSpeed1 {
+    margin-top: 5px;
+}
+
+#mbsSpeed {
+    color: #FD1C15;
+}
+
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
