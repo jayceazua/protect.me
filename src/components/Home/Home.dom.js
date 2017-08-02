@@ -81,10 +81,21 @@ class Home extends Component {
              {
                 this.state.networks.map((network, i) => {
                 return(
-                    <div id='networks' key={i}>
-                        <label className='ssid'>{network.ssid}</label><br/>
-                        <label className='security'>{network.security}</label>
-                    </div>
+                    
+                     <table>
+                        <tr>
+                            <th>Network Name</th>
+                            <th>Network Security</th>
+                        </tr>
+                        
+                        <tr>
+                            <td>{network.ssid}</td>
+                            <td>{network.security}</td>
+
+                        </tr>
+                          
+                     </table>
+                  
                     )
                 })
             }
