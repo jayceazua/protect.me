@@ -70,20 +70,26 @@ class Home extends Component {
                             <h3 className="det-txt"> Is this network secure?</h3>
                             <h4 className="sm-txt">Here's how to tell:</h4>
                             <button className='btn btn-danger' onClick={this.wifiScanner.bind(this)}>SCAN NETWORKS</button>
-                            {
-                                this.state.networks.map((network, i) => {
-                                    return(
-                                            <div id='networks' key={i}>
-                                                <label className='ssid'>{network.ssid}</label><br/>
-                                                <label className='security'>{network.security}</label>
-                                            </div>
-                                        )
-                                })
-                            }
                         </hgroup>                          
                     </div>
                 </div>
             </div>
+        </div>
+        <div className='container'>
+         <div className='row'>
+          <div className='col-lg-12'>
+             {
+                this.state.networks.map((network, i) => {
+                return(
+                    <div id='networks' key={i}>
+                        <label className='ssid'>{network.ssid}</label><br/>
+                        <label className='security'>{network.security}</label>
+                    </div>
+                    )
+                })
+            }
+          </div>
+         </div>
         </div>
     </section>
 
@@ -93,11 +99,9 @@ class Home extends Component {
             <div className="row">
                 <div className="header-section text-center">
                     <h2>Meet the brains</h2>
-                    <p>Over the last 6 months I have developed our coding skills. Learning and utilizing technologies like HTML & CSS, Javascript, jQuery, APIs & AJAX, Node.js, Node Web Servers and MUCH more. I've also learned database structures with Firebase, MySQL and MongoDB. <br/> <strong> It's been a wild ride! </strong> </p>
+                    <p>Over the last 6 months I have developed coding skills. Learning and utilizing technologies like HTML & CSS, Javascript, jQuery, APIs & AJAX, Node.js, Node Web Servers and MUCH more. I've also learned database structures with Firebase, MySQL and MongoDB. <br/> <strong> It's been a wild ride! </strong> </p>
                     <hr className="bottom-line"/>
                 </div>
-
-
                 <div className="col-lg-12">
                     <div className="pm-staff-profile-container">
                         <div className="pm-staff-profile-image-wrapper text-center">

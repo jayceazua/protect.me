@@ -64,10 +64,11 @@ ul.error li{
 }
 
 /***********************************
-Networks scanned
+Networks scanned /  internet speed
 ************************************/
 
 #networks {
+    margin: 8px;
     border: 1px solid black;
 }
 
@@ -75,6 +76,13 @@ Networks scanned
     color: red;
 }
 
+.security {
+
+}
+
+#speed {
+    margin-left: 5px;
+}
 
 
 /***********************************
