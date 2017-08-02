@@ -78,15 +78,18 @@ class Home extends Component {
         <div className='container'>
          <div className='row'>
           <div className='col-lg-12'>
+          <br/>
+          <table>
+                <tr>
+                    <th>Network Name</th>
+                    <th>Network Security</th>
+                </tr>
              {
                 this.state.networks.map((network, i) => {
                 return(
                     
-                     <table>
-                        <tr>
-                            <th>Network Name</th>
-                            <th>Network Security</th>
-                        </tr>
+                     
+                      
                         
                         <tr>
                             <td>{network.ssid}</td>
@@ -94,11 +97,13 @@ class Home extends Component {
 
                         </tr>
                           
-                     </table>
+                     
                   
                     )
                 })
+               
             }
+             </table>
           </div>
          </div>
         </div>
