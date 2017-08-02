@@ -27,8 +27,7 @@ class Home extends Component {
                         </div>
                         <div className="intro-para text-center quote">
                             <p className="big-text">Don't leave yourself vulnerable to cyber attack.</p>
-                            <p className="small-text">Ensure the public network you are accessing are secure.</p>
-                            <p>Sign in to utilize our services</p>
+                            <p className="small-text">Ensure the public network you are accessing is secure.</p>
                         </div>
                         <a href="#feature" className="mouse-hover">
                             <div className="mouse"></div>
@@ -70,13 +69,13 @@ class Home extends Component {
                         <hgroup>
                             <h3 className="det-txt"> Is this network secure?</h3>
                             <h4 className="sm-txt">Here's how to tell:</h4>
-                            <button onClick={this.wifiScanner.bind(this)}>SCAN NETWORKS</button>
+                            <button className='btn btn-danger' onClick={this.wifiScanner.bind(this)}>SCAN NETWORKS</button>
                             {
                                 this.state.networks.map((network, i) => {
                                     return(
-                                            <div key={i}>
-                                                <label>{network.ssid}</label><br/>
-                                                <label>{network.security}</label>
+                                            <div id='networks' key={i}>
+                                                <label className='ssid'>{network.ssid}</label><br/>
+                                                <label className='security'>{network.security}</label>
                                             </div>
                                         )
                                 })
@@ -99,7 +98,7 @@ class Home extends Component {
                 </div>
 
 
-                <div className="col-lg-4 col-md-4 col-sm-4">
+                <div className="col-lg-12">
                     <div className="pm-staff-profile-container">
                         <div className="pm-staff-profile-image-wrapper text-center">
                             <div className="pm-staff-profile-image">

@@ -64,6 +64,20 @@ ul.error li{
 }
 
 /***********************************
+Networks scanned
+************************************/
+
+#networks {
+    border: 1px solid black;
+}
+
+.ssid {
+    color: red;
+}
+
+
+
+/***********************************
 Navigation bar
 ************************************/
 .navbar-default .navbar-brand {
@@ -297,7 +311,7 @@ h2{
  Organisations
 ************************************/
 #organisations{
-    background-color: rgb(247, 247, 247);
+    background-color: rgb(255, 255, 255);
 }
 .orga-stru, .orga-stru2, .orga-stru3
 {
@@ -355,68 +369,8 @@ p.det-p {
 #pricing{
     background: rgb(247, 247, 247);
 }
-/***********************************
-Cta
-************************************/
-#cta-2{
-    padding: 140px 0;
-}
-.cta-2-txt {
-    font-size: 24px;
-    padding-bottom: 15px;
-    text-align: center;
-    margin: 0 auto;
-    line-height: 34px !important;
-}
-.cta-2-form input[type="email"] {
-    border: 0px solid #CCC;
-    padding: 13px 40px;
-    font-size: 18px;
-    color: #2b5d83;
-    font-weight: 100;
-    min-width: 280px;
-    margin-left: -4px;
-    margin-bottom: 2px;
-    border: 1px solid #FD1C15;
-    background-color: rgb(247, 247, 247);
-    border-radius: 30px 0px 0px 30px;
-}
-.cta-2-form-submit-btn {
-    font-size: 18px;
-    text-transform: capitalize;
-    color: #fff;
-    background-color: #FD1C15;
-    border: 2px solid #fff;
-    padding: 14px 30px;
-    margin-left: -4px;
-    transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    border-width: 1px 1px 1px 0px;
-    border-radius: 0px 30px 30px 0px;
-}
-/***********************************
-Work Shop
-************************************/
-#work-shop {
-    background-color: rgb(247, 247, 247);
-}
-.service-box{
-    background: #fff;
-    padding: 60px 30px 80px;
-    box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.1);
-}
-.icon-box i {
-    color: #FD1C15;
-    font-size: 65px;
-}
-.ser-text {
-    font-size: 24px;
-}
-.icon-box, .icon-text {
-    padding: 20px 0px 0px;
-}
+
+
 /***********************************
 Mentor Team
 ************************************/
@@ -446,76 +400,7 @@ Mentor Team
   color: #4b4b4b;
   font-weight: 100;
 }
-/***********************************
-Testimonial
-************************************/
-#testimonial{
-    background-color: #111;
-}
-.bg-white{
-    background-color: #fff !important;
-}
-.text-comment{
-  background-color: rgb(255, 255, 255);
-  padding: 20px;
-}
-.text-par{
-  font-size: 20px;
-  padding-bottom: 15px;
-}
-/***********************************
-Course
-************************************/
-[class*=" imghvr-"] figcaption, [class^="imghvr-"] figcaption {
-    background-color: #FD1C15;
-}
-[class*=" imghvr-"], [class^="imghvr-"] {
-    background-color: #FD1C15;
-    color: #fff;
-}
-/***********************************
-Price Table
-************************************/
-.price-table {
-    box-shadow: 0px 0px 1px 0px RGBA(0, 0, 0, 0.4);
-    position: relative;
-}
-.price-table .pricing-head {
-    background: #fff;
-    padding: 40px;
-    text-align: center;
-}
-.price-table .pricing-head h4 {
-    font-size: 22px;
-    color: #232c3b;
-    margin-top: 0px;
-    letter-spacing: 1px;
-    border-bottom: 1px solid #232c3b;
-    padding-bottom: 20px;
-}
-.pricing-head .amount {
-    font-size: 60px;
-    font-weight: bold;
-}
-.pricing-head .curency {
-    display: inline-block;
-    position: relative;
-    top: -30px;
-    font-size: 20px;
-}
-.price-in {
-    background: #fff;
-    text-align: center;
-}
-.btn-bg {
-    border: 0px;
-    border-radius: 0px;
-    color: #fff !important;
-    padding: 20px 0px;
-    font-weight: bold !important;
-    font-size: 14px;
-    background-color: #FD1C15;
-}
+
 /***********************************
 Contact Us
 ************************************/
@@ -707,6 +592,7 @@ Footer
 .footer .form-control:focus{
     box-shadow: none;
 }
+
 /***********************************
 ************************************
 Responsive media queries
