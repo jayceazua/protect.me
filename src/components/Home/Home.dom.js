@@ -9,6 +9,9 @@ class Home extends Component {
     wifiScanner(){
         axios.get('/api/wifi').then((response) => {
             console.log(response);
+        for(var i = 0; i < response.data.length; i++) {
+            this.test(response.data[i].ssid, response.data[i].security, response.data[i]);
+        }
             this.setState({
                 networks: response.data
             })
@@ -23,6 +26,21 @@ class Home extends Component {
             })
         });
     }
+
+     test(name, sec, item){
+     switch (true) {
+         case /WPA2/.test(sec):
+             console.log(name + ' security: ' + sec + ' which means it is secured.');
+             item.css = 'secured'
+             break;
+         case /WPA/.test(sec):
+             console.log(name + ' security: ' + sec + ' which means it is at risk.');
+             break;
+         default:
+            console.log(name + ' security: ' + sec + ' which means it is vulnerable.');
+     }
+    }
+
     render() {
         return (
 <div>   
@@ -79,6 +97,7 @@ class Home extends Component {
                             <h3 className="det-txt"> Is this network secure?</h3>
                             <h4 className="sm-txt">Here's how to tell:</h4>
                             <button id='networkTable' className='btn btn-danger' onClick={this.wifiScanner.bind(this)}>SCAN NETWORKS</button>
+
                             <button id='speed' className='btn btn-primary' onClick={this.testSpeed.bind(this)}>TEST INTERNET SPEED</button>
                         </hgroup> 
                         <div id='mbsSpeed1'>
@@ -103,7 +122,7 @@ class Home extends Component {
              {
                 this.state.networks.map((network, i) => {
                 return( 
-                        <tr key={i}>
+                        <tr key={i} className={network.css}>
                             <td>{network.ssid}</td>
                             <td>{network.security}</td>
                         </tr>
