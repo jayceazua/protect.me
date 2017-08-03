@@ -31,13 +31,18 @@ class Home extends Component {
      switch (true) {
          case /WPA2/.test(sec):
              console.log(name + ' security: ' + sec + ' which means it is secured.');
-             item.css = 'secured'
+             item.css = 'secured';
+             item.text = 'Secured'
              break;
          case /WPA/.test(sec):
              console.log(name + ' security: ' + sec + ' which means it is at risk.');
+             item.css = 'atRisk';
+             item.text = 'At Risk'
              break;
          default:
             console.log(name + ' security: ' + sec + ' which means it is vulnerable.');
+            item.css = 'vulnerable';
+            item.text = 'Vulnerable'
      }
     }
 
@@ -124,7 +129,7 @@ class Home extends Component {
                 return( 
                         <tr key={i} className={network.css}>
                             <td>{network.ssid}</td>
-                            <td>{network.security}</td>
+                            <td>{network.text}</td>
                         </tr>
                     )
                 })          
