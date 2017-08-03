@@ -1,9 +1,11 @@
 var mongoose = require('mongoose');
 var bcrypt = require('bcryptjs');
+var mlab = require('./mlab.json');
 
-mongoose.connect('mongodb://localhost/protect-me', {
+mongoose.connect('mongodb://' + mlab.username + ':' + mlab.password + '@ds031872.mlab.com:31872/heroku_pfcjphs7',
     useMongoClient: true
 });
+
 
 var db = mongoose.connection;
 
@@ -26,6 +28,8 @@ var UserSchema = mongoose.Schema({
         type: String
     }
 });
+
+
 
 var User = module.exports = mongoose.model('User', UserSchema);
 
