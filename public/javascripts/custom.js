@@ -6,7 +6,6 @@ var tbody = document.getElementById('tbody');
 //display loading image 
 buttonScanner.onclick = () => {
 
-
 	var img = document.createElement('IMG');
 	img.setAttribute('src', 'img/wifiLoader.gif');
 	img.setAttribute('id', 'imgLoader')
@@ -17,6 +16,5 @@ buttonScanner.onclick = () => {
 	setTimeout(() =>{
 		document.getElementById('imgLoader').style.display = 'none'
 	}, 3500);
-
 
 }

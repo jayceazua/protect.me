@@ -72,13 +72,6 @@ Networks scanned /  internet speed
     /*border: 1px solid black;*/
 }
 
-.ssid {
-    color: red;
-}
-
-.security {
-
-}
 
 #speed {
     margin-left: 5px;

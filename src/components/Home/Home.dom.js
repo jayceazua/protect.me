@@ -78,7 +78,7 @@ class Home extends Component {
                         <hgroup>
                             <h3 className="det-txt"> Is this network secure?</h3>
                             <h4 className="sm-txt">Here's how to tell:</h4>
-                            <button className='btn btn-danger' onClick={this.wifiScanner.bind(this)}>SCAN NETWORKS</button>
+                            <button id='networkTable' className='btn btn-danger' onClick={this.wifiScanner.bind(this)}>SCAN NETWORKS</button>
                             <button id='speed' className='btn btn-primary' onClick={this.testSpeed.bind(this)}>TEST INTERNET SPEED</button>
                         </hgroup> 
                         <div id='mbsSpeed1'>
@@ -93,13 +93,13 @@ class Home extends Component {
           <div className='col-lg-12'>
           <br/>
           <table>
-          <thead>
+          <thead id='tableHead'>
                 <tr>
                     <th>Network Name</th>
                     <th>Network Security</th>
                 </tr>
           </thead>
-          <tbody>
+          <tbody id='tbody'>
              {
                 this.state.networks.map((network, i) => {
                 return( 
