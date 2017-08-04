@@ -73,15 +73,15 @@ Networks scanned /  internet speed
 }
 
 .secured {
-    color: green;
+    background-color: green;
 }
 
 .vulnerable {
-    color: red;
+    background-color: kground: red;
 }
 
 .atRisk {
-    color: orange;
+    background-color: : orange;
 }
 
 
