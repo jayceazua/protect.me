@@ -72,6 +72,18 @@ Networks scanned /  internet speed
     /*border: 1px solid black;*/
 }
 
+.secured {
+    color: green;
+}
+
+.vulnerable {
+    color: red;
+}
+
+.atRisk {
+    color: orange;
+}
+
 
 #speed {
     margin-left: 5px;

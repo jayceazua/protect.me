@@ -127,9 +127,9 @@ class Home extends Component {
              {
                 this.state.networks.map((network, i) => {
                 return( 
-                        <tr key={i} className={network.css}>
+                        <tr key={i}>
                             <td>{network.ssid}</td>
-                            <td>{network.text}</td>
+                            <td className={network.css}>{network.text}</td>
                         </tr>
                     )
                 })          
@@ -196,44 +196,6 @@ class Home extends Component {
         </div>
     </section>
   
-    <section id="contact" className="section-padding">
-        <div className="container">
-            <div className="row">
-                <div className="header-section text-center">
-                    <h2>Contact Us</h2>
-                    <p>We'd love to hear from you!</p>
-                    <hr className="bottom-line"/>
-                </div>
-                <div id="sendmessage">Your message has been sent. Thank you!</div>
-                <div id="errormessage"></div>
-                <form action="" method="post" role="form" className="contactForm">
-                    <div className="col-md-6 col-sm-6 col-xs-12 left">
-                        <div className="form-group">
-                            <input type="text" name="name" className="form-control form" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                            <div className="validation"></div>
-                        </div>
-                        <div className="form-group">
-                            <input type="email" className="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                            <div className="validation"></div>
-                        </div>
-                        <div className="form-group">
-                            <input type="text" className="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                            <div className="validation"></div>
-                        </div>
-                    </div>
-                    <div className="col-md-6 col-sm-6 col-xs-12 right">
-                        <div className="form-group">
-                            <textarea className="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                            <div className="validation"></div>
-                        </div>
-                    </div>
-                    <div className="col-xs-12">
-                        <button type="submit" id="submit" name="submit" className="form contact-form-button light-form-button oswald light">SEND EMAIL</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
     
 </div>
         );
